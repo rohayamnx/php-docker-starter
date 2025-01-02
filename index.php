@@ -10,5 +10,5 @@ Created by rohayamnx on <?php echo date("Y-m-d H:i:s"); ?><br>
 <marquee width="30%" direction="right" height="100px" scrollamount="12">
 Thanks for watching...
 </marquee>
-Ready for production V2
+Ready for production
 </center>
