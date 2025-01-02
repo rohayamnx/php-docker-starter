@@ -7,4 +7,12 @@ A simple starter project for PHP development using Docker. This repository inclu
  - `git clone` this repository
  - `sudo docker build -t php-docker-starter .` 
  - `sudo docker run -p 80:80 php-docker-starter`
- - If port 80 already in use, can change another port. eg :81:80
+ - `If port 80 already in use, can change another port. eg :81:80`
+
+ # What You Should See
+
+ Below is an example of the output you should see when running the container:
+
+![Screenshot of the application](images/output.png)
+ 
+ 
