@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+    php-apache-environment:
+        container_name: test-webserver
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        depends_on:
+            - db
+        volumes:
+            - .:/var/www/html/
+        ports:
+            - 3389:80
+    db:
+        container_name: test-db
+        image: mysql:5.7
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: APsystem#
+            MYSQL_DATABASE: fusion_sandbox
+            MYSQL_USER: fusion_user
+            MYSQL_PASSWORD: APsystem#
+        ports:
+            - "3306:3306"
+        volumes:
+            - dbdata:/var/lib/mysql
